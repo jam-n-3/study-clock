@@ -1,24 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1 id="title">Study Clock</h1>
+      <h3 id="subtitle">Use the pomodoro technique to learn more efficiently!</h3>
+
+      <p id="break-label">Break Length</p>
+      <p id="session-label">Session Length</p>
+
+      <p id="break-decrement">&lt;</p>
+      <p id="break-length">5</p>
+      <p id="break-increment">&gt;</p>
+
+      <p id="session-decrement">&lt;</p>
+      <p id="session-length">25</p>
+      <p id="session-increment">&gt;</p>
+
+      <p id="timer-label">Session</p>
+      <p id="time-left">25:00</p>
+
+      <p id="start_stop">| |</p>
+      <p id="reset">(->)</p>
+
     </div>
   );
 }
