@@ -1,3 +1,58 @@
+* {
+  margin-bottom: 0;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 150%;
+}
+
+.App hr {
+  width: 100%;
+  height: 0;
+  margin: 0;
+  border: 0;
+}
+
+#title {
+  color: #BB86FC;
+}
+
+#subtitle {
+  color: #03DAC6;
+}
+
+#timer-label {
+  color: #3700B3;
+  font-size: 150%;
+}
+
+#time-left {
+  font-size: 500%;
+  margin-top: 0;
+}
+
+#pause {
+  width: 10vw;
+  fill: white;
+}
+
+#play {
+  width: 10vw;
+  fill: white;
+}
+
+#repeat {
+  width: 10vw;
+  fill: white;
+}
+
+.pad-l {
+  padding-left: 2vw;
+}
+
+.pad-r {
+  padding-right: 2vw;
 }
