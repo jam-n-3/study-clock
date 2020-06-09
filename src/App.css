@@ -35,17 +35,22 @@
 }
 
 #pause {
-  width: 10vw;
+  width: 5vw;
   fill: white;
 }
 
 #play {
-  width: 10vw;
+  width: 5vw;
   fill: white;
 }
 
+#start_stop {
+  cursor: pointer;
+}
+
 #repeat {
-  width: 10vw;
+  cursor: pointer;
+  width: 5vw;
   fill: white;
 }
 
@@ -55,4 +60,8 @@
 
 .pad-r {
   padding-right: 2vw;
+}
+
+.crs {
+  cursor: pointer;
 }
