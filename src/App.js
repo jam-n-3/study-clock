@@ -41,7 +41,9 @@ class App extends React.Component {
     this.setState({session: 25});
     this.setState({break: 5});
     this.setState({type: 'Session'});
-  }
+    document.getElementById('beep').pause();
+    document.getElementById('beep').currentTime = 0;
+  } 
 
   tick() {
     let s = this.state.seconds;
@@ -56,6 +58,7 @@ class App extends React.Component {
       }
       else {
         let t = this.state.type;
+        document.getElementById('beep').play();
         if (t === 'Session') {
           this.setState({type: 'Break'});
           this.setState({minutes: this.state.break});
@@ -91,7 +94,7 @@ class App extends React.Component {
 
   componentDidMount() {
     setInterval(
-      this.tick, 10
+      this.tick, 1000
     )
   }
 
@@ -137,6 +140,9 @@ class App extends React.Component {
           {playing ? (<Pause id="pause"/>) : (<Play id="play"/>)}
         </p>
         <p id="reset" class="pad-l" onClick={this.reset}><Repeat id="repeat" /></p>
+
+        <audio src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav"
+          id="beep" />
   
       </div>
     );
